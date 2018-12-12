@@ -1,0 +1,50 @@
+.container  {
+    background-color: rgb(255, 230, 0)
+}
+
+body { background: rgb(255, 230, 0) !important;}
+
+
+.factbtn {
+    text-align: center;
+}
+.h1 {
+    text-align: center;
+}
+.nestingdoll {
+    height: 45rem;
+   
+}
+
+.container2 {
+    display:flex;
+    flex-direction: row;
+}
+
+#contentRight {
+    display:flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+#contentLeft {
+    display:flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    margin-left: 0px;
+}
+
+.prof-box {
+
+    width: 450px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 0px;
+    text-align: right;
+ }
+ 
