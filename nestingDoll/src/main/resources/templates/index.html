@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta charset="UTF-8">
@@ -11,20 +11,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <img class="logo" src="http://pngimg.com/uploads/matryoshka_doll/matryoshka_doll_PNG31.png">
-    <a class="navbar-brand" href="index.html">HOME</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link" href="about.html">ABOUT</a>
-      </div>
-    </div>
-  </nav>
-
+    <!-- <div th:insert="/header :: header">...</div> -->
 
   <div class="container">
     <div>
@@ -32,7 +19,7 @@
     </div>
 
     <div class="factbtn">
-      <button type="button" class="btn btn-primary" onclick="window.location.href='nestingdoll.html'">GENERATE FACTS</button>
+      <button type="button" class="btn btn-primary" onclick="window.location.href='/nestingdoll.html'">GENERATE FACTS</button>
 
       <div id="contentCenter">
         <img class="nestingdoll2 center resize" src="https://1789a7.medialib.edu.glogster.com/s0QUrJAezG4PlJ2AQJcq/media/cf/cf99d9c15b437e27cbeec10273ad9264ee07d1bc/matryoshka-plain.png">
