@@ -1,9 +1,12 @@
 .container {
-    background-color: rgb(255, 230, 0)
+    background-color: rgb(255, 230, 0);
+    
 }
 
 body {
     background: rgb(255, 230, 0) !important;
+    height: 100%;
+
 }
 
 .factbtn {
@@ -15,16 +18,26 @@ body {
 }
 
 .nestingdoll {
-    height: 45rem;
+    margin: 30px;
+    height: 35rem;
 }
 
 .nestingdoll2 {
     height: 400px;
-    margin: auto;
     margin-top: 100px;
+    position: absolute;
+}
+.nestingdoll3 {
+    margin: 30px;
+    height: 20rem;
 }
 
+
 .container2 {
+    display: flex;
+    flex-direction: row;
+}
+.container3 {
     display: flex;
     flex-direction: row;
 }
@@ -44,6 +57,13 @@ body {
     margin-left: 0px;
 }
 
+#contentLeft2 {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    margin-left: 5px;
+}
+
 #contentCenter {
 
     width: 450px;
@@ -56,7 +76,7 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 40px;
     color: white;
-    margin: 0 auto;
+    margin: 300px;
     margin-top: 0px;
     text-align: right;
 }

@@ -1,6 +1,3 @@
-
-
-
 var myArray = new Array("Test1", "Test2", "Test3");
 var myIndex = 1;
 var print = document.getElementById("textbox");
