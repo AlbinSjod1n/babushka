@@ -1,12 +1,12 @@
 package com.babushka.nestingDoll;
 
-import javax.persistence.*;
+//import javax.persistence.*;
 
-@Entity
-@Table(name = "fact_tbl")
+//@Entity
+//@Table(name = "fact_tbl")
 public class Fact {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+  //  @Id
+    //@GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String factOne;
     private String factTwo;
