@@ -16,11 +16,15 @@ body {
     margin-top: 0px;    /* if you want it vertically middle of the navbar. */
 }
 
-.factbtn {
+.h1 {
     text-align: center;
 }
 
-.h1 {
+.about {
+    text-align: center;
+}
+
+.factbtn {
     text-align: center;
 }
 

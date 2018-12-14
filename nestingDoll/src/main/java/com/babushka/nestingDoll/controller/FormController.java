@@ -12,6 +12,10 @@ public class FormController {
     DataBaseConnection repository;
 
     @GetMapping ("/")
+    public String start(){
+        return "index";
+    }
+    @GetMapping ("/index")
     public String index(){
         return "index";
     }
@@ -19,5 +23,10 @@ public class FormController {
     @GetMapping ("/nestingdoll")
     public String nestingdoll(){
         return "nestingdoll";
+    }
+
+    @GetMapping ("/about")
+    public String about(){
+        return "about";
     }
 }

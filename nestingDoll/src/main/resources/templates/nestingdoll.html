@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="UTF-8">
@@ -12,29 +12,13 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">HOME</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="about.html">ABOUT</a>
-            </div>
-        </div>
-    </nav>
+<nav th:replace="~{/navbar :: nav}"></nav>
 
     <div class="container2">
         <div id="contentLeft">
             <input id="bild1" type="image" class="nestingdoll center resize" src="http://pngimg.com/uploads/matryoshka_doll/matryoshka_doll_PNG31.png">
         </div>
     </div>
-
-        <div class="container3">
-            <div id="contentLeft2">
-                <input id="bild" type="image" class="nestingdoll3 center resize" src="https://i.pinimg.com/originals/c6/3a/a8/c63aa8435b1bf7fd63db2b64c59f07a0.png">
-            </div>
 
             <div id="contentRight">
                 <div id="textbox" class="prof-box">
