@@ -8,7 +8,10 @@ import java.util.List;
 
 public class Dog {
 
-    public void dogFact() {
+    public String dogFact() {
+
+        String fact = "";
+
         try {
             String url = "jdbc:mysql://localhost:3306/nestingdoll?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
             Connection conn = DriverManager.getConnection(url, "root", "lösenord");
@@ -17,14 +20,16 @@ public class Dog {
 
             rs = stmt.executeQuery("SELECT * FROM dog");
             while (rs.next()) {
-                String fact = rs.getString("fact");
+                fact = rs.getString("fact");
                 System.out.println(fact);
             }
+
             conn.close();
         } catch (Exception e) {
             System.err.println("Got an exception! ");
             System.err.println(e.getMessage());
         }
+        return fact;
     }
 
 

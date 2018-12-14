@@ -12,54 +12,55 @@
 </head>
 
 <body>
-<nav th:replace="~{/navbar :: nav}"></nav>
+    <nav th:replace="~{/navbar :: nav}"></nav>
 
-    <div class="container2">
+    <div class="container">
         <div id="contentLeft">
             <input id="bild1" type="image" class="nestingdoll center resize" src="http://pngimg.com/uploads/matryoshka_doll/matryoshka_doll_PNG31.png">
         </div>
+    <p>Click on the babushka<br>
+        for more facts</p>
+
+    <div id="contentRight">
+        <div id="textbox" class="prof-box" th:text="${text}">
+            test
+        </div>
+    </div>
     </div>
 
-            <div id="contentRight">
-                <div id="textbox" class="prof-box">
-                    test
-                </div>
-            </div>
-        </div>
-
-        <script src="babushka.js"></script>
+    <!--<script src="babushka.js"></script>-->
     <!--<script>-->
     <!--&lt;!&ndash;function readForm() {&ndash;&gt;-->
-        <!--&lt;!&ndash;let textData = document.getElementById("inputAsync").value;&ndash;&gt;-->
-        <!--&lt;!&ndash;let content = {msg: textData};&ndash;&gt;-->
-        <!--&lt;!&ndash;document.getElementById("inputAsync").value = "";&ndash;&gt;-->
+    <!--&lt;!&ndash;let textData = document.getElementById("inputAsync").value;&ndash;&gt;-->
+    <!--&lt;!&ndash;let content = {msg: textData};&ndash;&gt;-->
+    <!--&lt;!&ndash;document.getElementById("inputAsync").value = "";&ndash;&gt;-->
 
-        <!--&lt;!&ndash;fetch('http://localhost:8080/myformAsync', {&ndash;&gt;-->
-            <!--&lt;!&ndash;method: 'post',&ndash;&gt;-->
-            <!--&lt;!&ndash;headers: {&ndash;&gt;-->
-                <!--&lt;!&ndash;'Content-Type': 'application/json'&ndash;&gt;-->
-            <!--&lt;!&ndash;},&ndash;&gt;-->
-            <!--&lt;!&ndash;body: JSON.stringify(content)&ndash;&gt;-->
-        <!--&lt;!&ndash;}).then(function (response) {&ndash;&gt;-->
-            <!--&lt;!&ndash;return response.json();&ndash;&gt;-->
-        <!--&lt;!&ndash;}).then(function (data) {&ndash;&gt;-->
-            <!--&lt;!&ndash;console.log("This was recieved: ");&ndash;&gt;-->
-            <!--&lt;!&ndash;console.log(data);&ndash;&gt;-->
-            <!--&lt;!&ndash;document.getElementById("textAsync").innerText = data.msg;&ndash;&gt;-->
-        <!--&lt;!&ndash;});&ndash;&gt;-->
+    <!--&lt;!&ndash;fetch('http://localhost:8080/myformAsync', {&ndash;&gt;-->
+    <!--&lt;!&ndash;method: 'post',&ndash;&gt;-->
+    <!--&lt;!&ndash;headers: {&ndash;&gt;-->
+    <!--&lt;!&ndash;'Content-Type': 'application/json'&ndash;&gt;-->
+    <!--&lt;!&ndash;},&ndash;&gt;-->
+    <!--&lt;!&ndash;body: JSON.stringify(content)&ndash;&gt;-->
+    <!--&lt;!&ndash;}).then(function (response) {&ndash;&gt;-->
+    <!--&lt;!&ndash;return response.json();&ndash;&gt;-->
+    <!--&lt;!&ndash;}).then(function (data) {&ndash;&gt;-->
+    <!--&lt;!&ndash;console.log("This was recieved: ");&ndash;&gt;-->
+    <!--&lt;!&ndash;console.log(data);&ndash;&gt;-->
+    <!--&lt;!&ndash;document.getElementById("textAsync").innerText = data.msg;&ndash;&gt;-->
+    <!--&lt;!&ndash;});&ndash;&gt;-->
     <!--&lt;!&ndash;}&ndash;&gt;-->
 
     <!--function getRandomNumber(){-->
-        <!--fetch('http://localhost:8080/myformAsync')-->
-            <!--.then(function (response) {-->
-                <!--return response.json();-->
-            <!--}).then(function (data) {-->
-            <!--console.log("This was recieved: ");-->
-            <!--console.log(data);-->
-            <!--document.getElementById("textbox").innerText = data.msg;-->
-        <!--});-->
+    <!--fetch('http://localhost:8080/myformAsync')-->
+    <!--.then(function (response) {-->
+    <!--return response.json();-->
+    <!--}).then(function (data) {-->
+    <!--console.log("This was recieved: ");-->
+    <!--console.log(data);-->
+    <!--document.getElementById("textbox").innerText = data.msg;-->
+    <!--});-->
     <!--}-->
-<!--</script>-->
+    <!--</script>-->
 
 </body>
 

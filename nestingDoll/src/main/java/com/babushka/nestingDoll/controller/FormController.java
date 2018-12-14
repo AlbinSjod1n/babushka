@@ -1,8 +1,10 @@
 package com.babushka.nestingDoll.controller;
 
 import com.babushka.nestingDoll.DataBaseConnection;
+import com.babushka.nestingDoll.Dog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -11,6 +13,9 @@ public class FormController {
 
     @Autowired
     DataBaseConnection repository;
+    Dog dog = new Dog();
+
+
 
     @GetMapping ("/")
     public String start(){
@@ -22,7 +27,8 @@ public class FormController {
     }
 
     @GetMapping ("/nestingdoll")
-    public String nestingdoll(){
+    public String nestingdoll(Model model){
+        model.addAttribute("text", dog.dogFact());
         return "nestingdoll";
     }
 
