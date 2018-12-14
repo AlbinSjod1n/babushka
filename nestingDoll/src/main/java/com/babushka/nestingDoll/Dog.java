@@ -18,7 +18,7 @@ public class Dog {
             Statement stmt = conn.createStatement();
             ResultSet rs;
 
-            rs = stmt.executeQuery("SELECT * FROM dog");
+            rs = stmt.executeQuery("SELECT * FROM dog WHERE DogID = 2");
             while (rs.next()) {
                 fact = rs.getString("fact");
                 System.out.println(fact);

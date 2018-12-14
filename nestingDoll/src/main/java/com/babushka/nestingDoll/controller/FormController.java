@@ -2,11 +2,13 @@ package com.babushka.nestingDoll.controller;
 
 import com.babushka.nestingDoll.DataBaseConnection;
 import com.babushka.nestingDoll.Dog;
+import com.babushka.nestingDoll.domain.Fact;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class FormController {
@@ -15,6 +17,19 @@ public class FormController {
     DataBaseConnection repository;
     Dog dog = new Dog();
 
+    @GetMapping ("/nestingdoll")
+    public String nestingdoll(Model model){
+        model.addAttribute("text", "");
+        return "nestingdoll";
+    }
+
+    @GetMapping("/ajax")
+    @ResponseBody
+    public Fact dataViaAjax(){
+        Fact fact = new Fact();
+        fact.setMsg(dog.dogFact());
+        return fact;
+    }
 
 
     @GetMapping ("/")
@@ -24,12 +39,6 @@ public class FormController {
     @GetMapping ("/index")
     public String index(){
         return "index";
-    }
-
-    @GetMapping ("/nestingdoll")
-    public String nestingdoll(Model model){
-        model.addAttribute("text", dog.dogFact());
-        return "nestingdoll";
     }
 
     @GetMapping ("/about")
@@ -42,14 +51,4 @@ public class FormController {
         return "nestingdoll";
     }
 
-    //    @ResponseBody
-//    @GetMapping("/nestingdollTextbox")
-//    public Fact myFormGetAsync() {
-//        int number = ThreadLocalRandom.current().nextInt(1, 11); //random number: [1,10]
-//        Fact message = new Fact();
-//        message.setMsg(Integer.toString(number));
-//        System.out.println("Send object: " + message);
-//        return message;
-//    }
-//}
 }
