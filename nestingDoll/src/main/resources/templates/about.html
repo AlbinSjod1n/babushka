@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="UTF-8">
@@ -7,23 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <title>About Nesting Doll Facts</title>
+    <title>About Nesting Doll</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img class="logo" src="http://pngimg.com/uploads/matryoshka_doll/matryoshka_doll_PNG31.png">
-        <a class="navbar-brand" href="index.html">HOME</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="about.html">ABOUT</a>
-            </div>
-        </div>
-    </nav>
+<nav th:replace="~{/navbar :: nav}"></nav>
+
+<div class="about"> Hej hej här är sidan om vår utmärkta faktasida</div>
 
 </body>
 

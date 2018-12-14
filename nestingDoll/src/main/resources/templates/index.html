@@ -11,13 +11,16 @@
 </head>
 
 <body>
-
-<!--<div th:insert="/header :: header">...</div>-->
+<nav th:replace="~{/navbar :: nav}"></nav>
 
   <div class="container">
     <div>
       <h1 class="h1">Nesting Doll Facts </h1>
     </div>
+
+    <div class="about"> Welcome! <br> Pick a theme and nerd your way down, layer by layer, to the nitty gritty of facts about your choice.</div>
+
+
 
     <div class="factbtn">
       <button type="button" class="btn btn-primary" onclick="window.location.href='/nestingdoll'">GENERATE FACTS</button>
