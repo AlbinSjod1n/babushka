@@ -14,8 +14,7 @@ public class DataBaseConnection {
 
         System.out.println("Creating connection");
         try {
-            var connection = DriverManager.getConnection(url, "root", "Sigurd1121");
-//            var connection = DriverManager.getConnection(url, "root", "1BROR2john");
+            var connection = DriverManager.getConnection(url, "root", "lösenord");
             System.out.println("Connected");
             return connection;
         } catch (SQLException e) {

@@ -14,28 +14,30 @@ public class FormController {
 
     @Autowired
     DataBaseConnection repository;
-//
-    @GetMapping ("/")
-    public String index(){
+
+    //
+    @GetMapping("/")
+    public String index() {
         return "index";
     }
 
-//    @GetMapping ("/nestingdoll")
+    //    @GetMapping ("/nestingdoll")
 //    public String nestingdoll(){
 //        return "nestingdoll";
 //    }
-    @PostMapping ("/nestingdoll")
-    public String nestingdoll(){
+    @PostMapping("/nestingdoll")
+    public String nestingdoll() {
         return "nestingdoll";
-    }}
+    }
+}
 
-//    @ResponseBody
-//    @GetMapping("/nestingdollTextbox")
-//    public Fact myFormGetAsync() {
-//        int number = ThreadLocalRandom.current().nextInt(1, 11); //random number: [1,10]
-//        Fact message = new Fact();
-//        message.setMsg(Integer.toString(number));
-//        System.out.println("Send object: " + message);
-//        return message;
-//    }
-//}
+    /*@ResponseBody
+    @GetMapping("/nestingdollTextbox")
+    public Fact myFormGetAsync() {
+        int number = ThreadLocalRandom.current().nextInt(1, 11); //random number: [1,10]
+        Fact message = new Fact();
+        message.setMsg(Integer.toString(number));
+        System.out.println("Send object: " + message);
+        return message;
+    }*/
+}
